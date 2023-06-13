@@ -9,23 +9,4 @@ Previously:
 - [Wunderkind](https:///wunderkind.co)
 
 Projects of interest:
-- Defib Sim
-
-<!-- <html>
-  <body>
-    This is the Site of Josh Ferge. Welcome!
-    <h2>Work</h2>
-    <p>
-      I'm currently a software engineer at
-      <a href="https://sentry.io">Sentry.io</a>. Previously:
-    </p>
-    <ul>
-      <li><a href="unspun.io">unspun.io</a></li>
-      <li<a href="wunderkind.com">wunderkind.com</li>
-    </ul>
-    <p>projects of interest:</p>
-    <ul>
-        <li></li>
-    </ul>
-  </body>
-</html> -->
+- [Defib Sim](/Defibrillator-Simulator/) ([press](https://www.colorado.edu/cs/2016/06/21/recent-alum-helps-develop-disruptive-simulated-defibrillator))
