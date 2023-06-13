@@ -1,4 +1,4 @@
-import { html, tokens } from "https://deno.land/x/rusty_markdown/mod.ts";
+import { html, tokens } from "https://deno.land/x/rusty_markdown@v0.4.1/mod.ts";
 
 export function add(a: number, b: number): number {
   return a + b;
