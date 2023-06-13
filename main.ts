@@ -13,5 +13,5 @@ if (import.meta.main) {
   });
   const rendered = html(tokenized);
 
-  await Deno.writeTextFile("./build/index.html", rendered);
+  await Deno.writeTextFile("./dist/index.html", rendered);
 }
