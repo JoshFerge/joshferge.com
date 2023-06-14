@@ -1,7 +1,6 @@
 # Developer Experience Improvements
 
-I'm an okay coder. Here are a few tips i've picked up that can increase your
-development speed:
+Here are a few tips I've picked up that can increase your development speed:
 
 - Increase your key repeat speed.
   - In Mac, open your search (CMD-Space), and type in keyboard. Open the
