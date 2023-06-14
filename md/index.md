@@ -1,8 +1,6 @@
 This is the site of Josh Ferge! Welcome!
 
-# Pages
-
-- [Quick Developer Speed Improvements](/pages/dev.html)
+# About
 
 ## Work
 
@@ -17,3 +15,7 @@ Projects of interest:
 
 - [Defib Sim](/Defibrillator-Simulator/)
   ([press](https://www.colorado.edu/cs/2016/06/21/recent-alum-helps-develop-disruptive-simulated-defibrillator))
+
+# Pages
+
+- [Quick Developer Speed Improvements](/pages/dev.html)
