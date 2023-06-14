@@ -13,8 +13,9 @@ Previously:
 
 Projects of interest:
 
-- [Defib Sim](/Defibrillator-Simulator/)
+- [Defibrillator Simulator](/Defibrillator-Simulator/)
   ([press](https://www.colorado.edu/cs/2016/06/21/recent-alum-helps-develop-disruptive-simulated-defibrillator))
+- [Clickhouse Query Formatter](https://marketplace.visualstudio.com/items?itemName=JoshFerge.clickhouse-query-formatter)
 
 # Pages
 
