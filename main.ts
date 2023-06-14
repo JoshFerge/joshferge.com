@@ -2,6 +2,20 @@ import { html, tokens } from "https://deno.land/x/rusty_markdown@v0.4.1/mod.ts";
 
 import { walk, ensureDir } from "https://deno.land/std@0.100.0/fs/mod.ts";
 
+const wrapper = (body: string) => `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Josh Ferge's Personal Website">
+<meta name="keywords" content="Developer, Javascript, Python, Code, Startups">
+<meta name="author" content="Josh Ferge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+${body}
+</body>
+</html>`;
+
 async function listFilesInDir(path: string) {
   const files = [];
   const directories = [];
@@ -33,7 +47,7 @@ if (import.meta.main) {
 
     const path = file.replace(".md", ".html").replace("md/", "dist/");
     console.log(path);
-    await Deno.writeTextFile(path, rendered);
+    await Deno.writeTextFile(path, wrapper(rendered));
   }
 
   // read from file at ./md/index.ts
