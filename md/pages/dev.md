@@ -3,7 +3,7 @@
 Here are a few tips and tools that I use that may be useful to improve your
 productivity:
 
-# Keyboard / Input
+## Keyboard / Input
 
 - Increase your key repeat speed.
   - In Mac, open your search (CMD-Space), and type in keyboard. Open the
@@ -17,13 +17,13 @@ productivity:
   - Ctrl-A to go the beginning of input / line
   - Ctrl-E to go to the end of an input / line
 
-# General
+## General
 
 - Memorize regex characters so when you see one its at least somewhat legible to
   you
 - Cmd-Shift-T to open a browser tab you just closed.
 
-# Tools:
+## Tools:
 
 ### VSCode Extensions
 
