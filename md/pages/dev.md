@@ -52,5 +52,5 @@ productivity:
 
 - I use the [Rectangle](https://rectangleapp.com/) mac plugin for window
   management / hotkeys.
-- I use (Flow)[https://flowapp.info/] as a pomodoro timer. Will expand on how I
+- I use [Flow](https://flowapp.info/) as a pomodoro timer. Will expand on how I
   use a timer in the future.
