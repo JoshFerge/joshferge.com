@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --allow-read --allow-write main.ts"
+    "build": "deno run --allow-read --allow-write main.ts",
+    "serve": "deno task build && file_server ./dist"
   }
 }

@@ -13,6 +13,11 @@ const wrapper = (body: string) => `<!DOCTYPE html>
 </head>
 <body>
 ${body}
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <footer>
   <p><a href="/">Home</a> <a href="https://twitter.com/JoshFerge">Follow me on Twitter</a> </p>
 </footer>
