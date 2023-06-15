@@ -3,7 +3,7 @@ import { html, tokens } from "https://deno.land/x/rusty_markdown@v0.4.1/mod.ts";
 import { walk, ensureDir } from "https://deno.land/std@0.100.0/fs/mod.ts";
 
 // load the index.html file in this directory as a string
-const templateHtml = await Deno.readTextFile("./template.html");
+const templateHtml = await Deno.readTextFile("./static/template.html");
 const wrapper = (body: string) => {
   return templateHtml.replace("{{body}}", body);
 };
@@ -40,13 +40,4 @@ if (import.meta.main) {
     const path = file.replace(".md", ".html").replace("md/", "dist/");
     await Deno.writeTextFile(path, wrapper(rendered));
   }
-
-  // read from file at ./md/index.ts
-  // const md = await Deno.readTextFile("./md/index.md");
-  // const tokenized = tokens(md, {
-  //   strikethrough: true,
-  // });
-  // const rendered = html(tokenized);
-
-  // await Deno.writeTextFile("./dist/index.html", rendered);
 }
