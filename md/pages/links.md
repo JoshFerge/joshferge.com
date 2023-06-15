@@ -3,8 +3,9 @@
 ## News / Blogs
 
 I generally try to consume information through RSS Feeds. I use the
-[Reeder](https://reederapp.com). It is one of the best pieces of software that I
-use and well worth the money. You can find RSS feeds for most of these links.
+[Reeder](https://reederapp.com) Mac / iOS app. It is one of the best pieces of
+software, and well worth the money. You can find RSS feeds for most of these
+links.
 
 - [Marginal Revolution](https://marginalrevolution.com)
 - [Matt Levine's Bloomberg Column](https://reederapp.com)
