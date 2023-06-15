@@ -17,7 +17,7 @@ Projects of interest:
   ([press](https://www.colorado.edu/cs/2016/06/21/recent-alum-helps-develop-disruptive-simulated-defibrillator))
 - [Clickhouse Query Formatter](https://marketplace.visualstudio.com/items?itemName=JoshFerge.clickhouse-query-formatter)
 
-# Pages
+## Pages
 
 - [Quick Developer Speed Improvements](/pages/dev.html)
 - [Useful Links](/pages/links)
