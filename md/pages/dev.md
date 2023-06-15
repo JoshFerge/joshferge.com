@@ -34,7 +34,7 @@ productivity:
 
 ### Github
 
-- Have a bookmark directly to your open pull requests handy, e.g
+- Have a bookmark directly to your open pull requests handy, e.g.
   [for me](https://github.com/pulls?q=is%3Aopen+is%3Apr+author%3AJoshFerge+archived%3Afalse).
 - The notifications tab can be messy but it is far better than trying to manage
   it over email once you can get the hang of it. I've yet to explore 3rd party
