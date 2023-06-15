@@ -14,8 +14,7 @@ const wrapper = (body: string) => `<!DOCTYPE html>
 <body>
 ${body}
 <footer>
-  <p><a href="https://twitter.com/JoshFerge">Josh Ferge</a></p>
-  <p><a href="/">Home</a></p>
+  <p><a href="/">Home</a> <a href="https://twitter.com/JoshFerge">Follow me on Twitter</a> </p>
 </footer>
 </body>
 </html>`;
