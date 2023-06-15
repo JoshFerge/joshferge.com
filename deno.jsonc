@@ -1,6 +1,6 @@
 {
   "tasks": {
     "build": "deno run --allow-read --allow-write main.ts",
-    "serve": "deno task build && file_server ./dist"
+    "serve": "deno task build && deno run --allow-net --allow-read https://deno.land/std@0.191.0/http/file_server.ts ./dist"
   }
 }
