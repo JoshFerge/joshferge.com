@@ -5,6 +5,17 @@ import { walk, ensureDir } from "https://deno.land/std@0.100.0/fs/mod.ts";
 const wrapper = (body: string) => `<!DOCTYPE html>
 <html>
 <head>
+<style>
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+  a {
+    color: #809fff;
+  }
+}
+</style>
 <meta charset="UTF-8">
 <meta name="description" content="Josh Ferge's Personal Website">
 <meta name="keywords" content="Developer, Javascript, Python, Code, Startups">
