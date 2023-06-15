@@ -20,4 +20,4 @@ Projects of interest:
 ## Pages
 
 - [Quick Developer Speed Improvements](/pages/dev.html)
-- [Useful Links](/pages/links)
+- [Useful Links](/pages/links.html)

@@ -2,36 +2,11 @@ import { html, tokens } from "https://deno.land/x/rusty_markdown@v0.4.1/mod.ts";
 
 import { walk, ensureDir } from "https://deno.land/std@0.100.0/fs/mod.ts";
 
-const wrapper = (body: string) => `<!DOCTYPE html>
-<html>
-<head>
-<style>
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #eee;
-    background: #121212;
-  }
-  a {
-    color: #809fff;
-  }
-}
-</style>
-<meta charset="UTF-8">
-<meta name="description" content="Josh Ferge's Personal Website">
-<meta name="keywords" content="Developer, Javascript, Python, Code, Startups">
-<meta name="author" content="Josh Ferge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-${body}
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<footer>
-  <p><a href="/">Home</a> <a href="https://twitter.com/JoshFerge">Follow me on Twitter</a> </p>
-</footer>
-</body>
-</html>`;
+// load the index.html file in this directory as a string
+const templateHtml = await Deno.readTextFile("./template.html");
+const wrapper = (body: string) => {
+  return templateHtml.replace("{{body}}", body);
+};
 
 async function listFilesInDir(path: string) {
   const files = [];
@@ -63,7 +38,6 @@ if (import.meta.main) {
     const rendered = html(tokenized);
 
     const path = file.replace(".md", ".html").replace("md/", "dist/");
-    console.log(path);
     await Deno.writeTextFile(path, wrapper(rendered));
   }
 
