@@ -1,5 +1,6 @@
 {
   "tasks": {
+    "build": "deno run --allow-read --allow-write --allow-net main.ts",
     "serve": "deno run --allow-read --allow-write --allow-net --watch=md/,index.ts main.ts",
   }
 }
