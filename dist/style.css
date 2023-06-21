@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #141414;
+  }
+  a {
+    color: #809fff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+p,
+li {
+  line-height: 1.45;
+}
+
+body {
+  max-width: 70em;
+}
