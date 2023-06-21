@@ -7,20 +7,20 @@ productivity:
 
 - Increase your key repeat speed.
   - In Mac, open your search (CMD-Space), and type in keyboard. Open the
-    keyboard settings
+    keyboard settings. 
   - Set "Key repeat speed" and "Delay until repeat" all the way to the right.
   - This will allow you to scroll much faster using left/right arrow, etc.
 
 - Use quick text shortcuts for moving around. These generally work in most
   inputs / terminals / code editors.
-  - Alt-ArrowKeys to quickly scroll across per-word
-  - Ctrl-A to go the beginning of input / line
-  - Ctrl-E to go to the end of an input / line
+  - Alt-ArrowKeys to quickly scroll across per-word. 
+  - Ctrl-A to go the beginning of input / line. 
+  - Ctrl-E to go to the end of an input / line. 
 
 ## General
 
 - Memorize regex characters so when you see one its at least somewhat legible to
-  you
+  you.
 - Cmd-Shift-T to open a browser tab you just closed.
 
 ## Tools:
@@ -45,7 +45,7 @@ productivity:
 
 - Ctrl-R to search through your history.
 - Learn tools like awk, sed, jq (or at least know what they are so you can point
-  chat-GPT in the right direction)
+  chat-GPT in the right direction). 
 - I set a global hotkey for my iTerm to option-~.
 
 ### Other
