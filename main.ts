@@ -54,6 +54,7 @@ async function copyStaticFiles() {
 }
 
 if (import.meta.main) {
+  await ensureDir("./dist");
   await clean();
   await copyStaticFiles();
 
