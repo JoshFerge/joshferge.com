@@ -1,3 +1,5 @@
+# Josh Ferge -- Software Engineer, Curious Human
+
 This is the site of Josh Ferge! Welcome!
 
 # About
@@ -19,5 +21,5 @@ Projects of interest:
 
 ## Pages
 
-- [Quick Developer Speed Improvements](/pages/dev.html)
-- [Useful Links](/pages/links.html)
+- [Quick Developer Speed Improvements](./pages/dev)
+- [Useful Links](./pages/links)

@@ -1,11 +1,22 @@
 import { html, tokens } from "https://deno.land/x/rusty_markdown@v0.4.1/mod.ts";
-
-import { walk, ensureDir } from "https://deno.land/std@0.100.0/fs/mod.ts";
+import { walk, ensureDir } from "https://deno.land/std@0.192.0/fs/mod.ts";
+import { serve } from "https://deno.land/std@0.192.0/http/server.ts";
+import { serveDir } from "https://deno.land/std@0.192.0/http/file_server.ts";
 
 // load the index.html file in this directory as a string
 const templateHtml = await Deno.readTextFile("./static/template.html");
-const wrapper = (body: string) => {
-  return templateHtml.replace("{{body}}", body);
+const wrapper = (body: string, title: string, isIndex: boolean) => {
+  let withTitle: string;
+  const withBody = templateHtml.replace("{{body}}", body);
+  if (!isIndex) {
+    withTitle = withBody.replace("{{title}}", title + " - Josh Ferge");
+  } else {
+    withTitle = withBody.replace(
+      "{{title}}",
+      "The Personal Website of Josh Ferge"
+    );
+  }
+  return withTitle;
 };
 
 async function listFilesInDir(path: string) {
@@ -21,7 +32,6 @@ async function listFilesInDir(path: string) {
   return [files, directories];
 }
 
-// Learn more at https://deno.land/manual/examples/module_metadata#concepts
 if (import.meta.main) {
   const [files, directories] = await listFilesInDir("./md");
 
@@ -31,13 +41,28 @@ if (import.meta.main) {
   }
 
   for (const file of files) {
+    const isIndex = file.includes("index.md");
     const md = await Deno.readTextFile(file);
     const tokenized = tokens(md, {
       strikethrough: true,
     });
-    const rendered = html(tokenized);
+    const body = html(tokenized);
 
-    const path = file.replace(".md", ".html").replace("md/", "dist/");
-    await Deno.writeTextFile(path, wrapper(rendered));
+    const title = tokenized[1];
+    if (title.type != "text") {
+      throw new Error("not a text!");
+    }
+
+    const path = !isIndex
+      ? file.replace(".md", "").replace("md/", "dist/")
+      : file.replace(".md", ".html").replace("md/", "dist/");
+
+    await Deno.writeTextFile(path, wrapper(body, title.content, isIndex));
   }
+
+  serve((req) => {
+    return serveDir(req, {
+      fsRoot: "./dist",
+    });
+  });
 }
